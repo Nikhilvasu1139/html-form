@@ -9,13 +9,13 @@
 
 <body>
     <form>
-        <p>Username:
+        <p>Full Name
             <br>
-            <input type="text" name="username" width="15">
+            <input type="text" name="username" maxlength="10" width="15">
         </p>
-        <p>Password:
+        <p>Password
             <br>
-            <input type="password" name="password" width="15">
+            <input type="password" name="password" maxlength="8" width="15">
         </p>
 
         <p>About Me
@@ -27,9 +27,41 @@
         <p>
             Fav Movies
             <br>
-            <input type="radio" name="movies" value="Comedy">Comedy
+            <input type="radio" checked name="movies" value="Comedy">Comedy
             <input type="radio" name="movies" value="Fighting">Fighting
         </p>
+        <p>
+            Gender
+            <br>
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+        </p>
+        <p>
+            Hobbies
+            <br>
+            <input type="checkbox" checked name="hobbies" value="Playing Cricket">Playing Cricket
+            <input type="checkbox" checked name="hobbies" value="Watching Movies">Watching Movies
+            <input type="checkbox" checked name="hobbies" value="Reading Books">Reading Books
+            <input type="checkbox" name="hobbies" value="Workout">Workout
+        </p>
+        <p>
+            <select multiple="multiple" name="country">
+                Countries:
+                <br>
+                <option value="Country">Select Your Country</option>
+                <option selected value="PK">Pakistan</option>
+                <option selected value="IN">India</option>
+                <option value="CA">Canada</option>
+                <option value="EL">England</option>
+                <option value="SL">Srilanka</option>
+            </select>
+        </p>
+        <p>
+            Profile Picture:
+            <br>
+            <input type="file" name="profilePicture">
+        </p>
+        <input type="submit" value="Send Form">
     </form>
 </body>
 
